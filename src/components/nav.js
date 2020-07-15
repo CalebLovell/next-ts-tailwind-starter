@@ -5,7 +5,7 @@ const links = [
 	{ href: `https://nextjs.org/docs`, label: `Docs` },
 ];
 
-export default function Nav() {
+export const Nav = () => {
 	return (
 		<nav>
 			<ul className='flex justify-between items-center p-8'>
@@ -26,4 +26,4 @@ export default function Nav() {
 			</ul>
 		</nav>
 	);
-}
+};
