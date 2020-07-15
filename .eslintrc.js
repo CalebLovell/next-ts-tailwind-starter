@@ -20,6 +20,7 @@ module.exports = {
 	},
 	rules: {
 		'react/react-in-jsx-scope': `off`,
+		'@typescript-eslint/explicit-module-boundary-types': `off`,
 		'array-bracket-spacing': [`error`, `never`],
 		'block-spacing': `error`,
 		'brace-style': [`error`, `1tbs`, { allowSingleLine: true }],
@@ -50,6 +51,7 @@ module.exports = {
 		'prefer-spread': `error`,
 		'prefer-template': `error`,
 		quotes: [`error`, `backtick`],
+		'react/prop-types': `off`,
 		semi: [`error`, `always`],
 		'semi-spacing': `error`,
 		'semi-style': [`error`, `last`],
@@ -62,4 +64,12 @@ module.exports = {
 		'template-curly-spacing': `error`,
 		yoda: `error`,
 	},
+	overrides: [
+		{
+			files: [`*.ts`, `*.tsx`],
+			rules: {
+				'@typescript-eslint/explicit-module-boundary-types': [`error`],
+			},
+		},
+	],
 };
