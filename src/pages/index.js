@@ -16,7 +16,7 @@ export default function IndexPage() {
 				<h1 className='text-lg text-center m-4'>TailwindUI/Next.js</h1>
 				<p className='bg-red-700'>This is a test of the tailwind next integration.</p>
 			</div>
-			<div>
+			<div className='container mx-auto pt-5'>
 				<label htmlFor='price' className='block text-sm leading-5 font-medium text-gray-700'>
 					Price
 				</label>
