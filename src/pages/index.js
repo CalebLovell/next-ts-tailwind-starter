@@ -1,13 +1,14 @@
 import { Nav } from '@components/nav';
+import Head from 'next/head';
 
 export default function IndexPage() {
 	return (
 		<div>
-			<head>
+			<Head>
 				<title>Next.js TailwindCSS</title>
 				<link rel='icon' href='/favicon.ico' />
 				<link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
-			</head>
+			</Head>
 			<Nav />
 			<div className='hero'>
 				<h1 className='title'>Next.js + Tailwind CSS</h1>
